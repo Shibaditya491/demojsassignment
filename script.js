@@ -20,5 +20,9 @@ box3.addEventListener('click', ()=>{
 })
 
 button.addEventListener('click', ()=>{
-    header.innerText = `Hello, ${name1.value}`;     
+    let name = name1.value.trim();
+    if (name !== ""){
+        header.innerText = `Hello, ${name}`
+    }     
+
 })
